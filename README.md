@@ -21,7 +21,7 @@ care and feeding of factors.
 You can install foofactors like so:
 
 ``` r
-devtools::install_github("jennybc/foofactors")
+devtools::install_github("390-2020-09-Fall/foofactors")
 ```
 
 ## Quick demo
