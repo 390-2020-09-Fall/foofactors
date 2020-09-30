@@ -6,8 +6,8 @@
 #' @export
 #'
 #' @examples
-#' oztokg(1)
-oztokg <- function(weight_oz) {
-  weight_kg <- weight_oz/35.274
-  return(weight_kg)
+#' oztokg(oz = 1)
+oztokg <- function(oz) {
+  kg <- oz/35.274
+  return(kg)
 }

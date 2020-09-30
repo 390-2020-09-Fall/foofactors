@@ -4,7 +4,7 @@
 \alias{oztokg}
 \title{oz-kg unit conversion function}
 \usage{
-oztokg(weight_oz)
+oztokg(oz)
 }
 \arguments{
 \item{oz}{}
@@ -16,5 +16,5 @@ kg
 oz-kg unit conversion function
 }
 \examples{
-oztokg(1)
+oztokg(oz = 1)
 }
