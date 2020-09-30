@@ -1,8 +1,8 @@
-#' OZ-KG unit conversion function
+#' oz-kg unit conversion function
 #'
-#' @param weight in oz
+#' @param oz
 #'
-#' @return weight in kg
+#' @return kg
 #' @export
 #'
 #' @examples

@@ -1,5 +1,5 @@
 ## code to prepare `DATASET` dataset goes here
 library(tidyverse)
 
-weightdata <- sample(20)
-usethis::use_data(weightdata, overwrite = TRUE)
+oztokg_data <- as.tibble(sample(20))
+usethis::use_data(oztokg_data, overwrite = TRUE)
