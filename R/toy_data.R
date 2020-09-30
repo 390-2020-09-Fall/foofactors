@@ -9,4 +9,4 @@
 #'   ...
 #' }
 #' @source \url{https://r-pkgs.org/data.html#data-data/}
-"toydata"
+"toy_data"
