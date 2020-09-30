@@ -1,4 +1,4 @@
-#' Toy data
+#' oztokg example data
 #'
 #' Based on R Packages Chapter 14
 #'
