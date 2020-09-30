@@ -65,3 +65,11 @@ The `fcount()` function returns a frequency table as a tibble with a column of f
 ```{r}
 fcount(x)
 ```
+
+We can test if a numeric value is even. The result will be a logical vector.
+
+```{r}
+is_even(3)
+is_even(c(4, 5))
+```
+
