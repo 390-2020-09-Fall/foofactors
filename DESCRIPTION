@@ -1,13 +1,13 @@
 Package: foofactors
-Title: What the Package Does (One Line, Title Case)
+Title: Multiply Two Integers 
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Olivia",
+           family = "Handoko",
            role = c("aut", "cre"),
            email = "first.last@example.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: Bored? This random generator will allow you two random integers that will automatically multiply for you without the need of a calculator. Sometimes manually multiplying integers can be tedious. This package helps you out 
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

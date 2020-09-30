@@ -4,6 +4,7 @@ output: github_document
 ---
 ```{r}
 library(devtools)
+library(foofactors)
 ```
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -33,26 +34,21 @@ You can install foofactors like so:
 ``` r
 devtools::install_github("390-2020-09-Fall/foofactors")
 ```
-
+Given two random integers
 ```{r}
 x <- sample(1:10, 1)
 y <- sample(1:10,1)
 c(x,y)
 ```
 
+Using fmultiply() to get the product of those two random integers 
 ```{r}
-fmultiply <- function(x,y) {
-  x*y
-}
-```
-
-```{r}
-use_r("fmultiply")
-use_test("fmultiply")
-```
-
-```{r}
-load_all()
 fmultiply(x,y)
 ```
+
+
+
+
+
+
 

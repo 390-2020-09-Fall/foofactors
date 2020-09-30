@@ -1,15 +1,15 @@
-#' Multiply two integers
+#' Bind two factors
 #'
-#' Create product of two existing random integers, where the new integer is the multiplication
-#' of the two random input integers.
+#' Create a new integer from the product of two random integers, where the new integer
+#' is the multiplication of the two input integers
 #'
 #' @param x integer
 #' @param y integer
 #'
-#' @return product
+#' @return factor
 #' @export
 #' @examples
 #' fmultiply(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
-fmultiply <- function(x,y) {
+fmultiply <- fmultiply <- function(x,y) {
   x*y
 }
