@@ -5,7 +5,7 @@
 \alias{oztokg_data}
 \title{oztokg example data}
 \format{
-A data frame with 3 rows and 2 variables:
+A data frame with 20 rows and 1 variable1:
 \describe{
 \item{value}{example number in unit oz to convert to kg}
 ...

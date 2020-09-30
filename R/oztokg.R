@@ -1,6 +1,6 @@
 #' oz-kg unit conversion function
 #'
-#' @param oz
+#' @param oz is the original number in oz unit
 #'
 #' @return kg
 #' @export
