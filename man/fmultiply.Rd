@@ -2,7 +2,7 @@
 % Please edit documentation in R/fmultiply.R
 \name{fmultiply}
 \alias{fmultiply}
-\title{Bind two factors}
+\title{Multiply Two Integers}
 \usage{
 fmultiply(x, y)
 }
