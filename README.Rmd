@@ -32,29 +32,15 @@ devtools::install_github("390-2020-09-Fall/foofactors")
   
 ## Quick demo
 
-Convert weight in oz to kg via `oztokg()`:
+`oztokg` function converts number of weight in oz to kg. Here is the first 6 items of an example dataset of numbers in oz:
 
 ```{r}
 library(foofactors)
-example_weight_in_oz <- 3
+head(oztokg_data)
 ```
 
-The `oztokg()` function transforms the unit into kg:
+The `oztokg()` function converts the numbers to units in kg:
 
 ```{r}
-oztokg(example_weight_in_kg)
-```
-
-Often we want a table of frequencies for the levels of a factor. The base `table()` function returns an object of class `table`, which can be inconvenient for downstream work.
-
-```{r}
-set.seed(1234)
-x <- factor(sample(letters[1:5], size = 100, replace = TRUE))
-table(x)
-```
-
-The `fcount()` function returns a frequency table as a tibble with a column of factor levels and another of frequencies:
-
-```{r}
-fcount(x)
+oztokg(oztokg_data)
 ```
