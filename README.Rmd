@@ -1,6 +1,11 @@
 ---
+title: "OliviaMP4"
 output: github_document
 ---
+```{r}
+library(devtools)
+library(foofactors)
+```
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -29,39 +34,21 @@ You can install foofactors like so:
 ``` r
 devtools::install_github("390-2020-09-Fall/foofactors")
 ```
-  
-## Quick demo
-
-Binding two factors via `fbind()`:
-
+Given two random integers
 ```{r}
-library(foofactors)
-a <- factor(c("character", "hits", "your", "eyeballs"))
-b <- factor(c("but", "integer", "where it", "counts"))
+x <- sample(1:10, 1)
+y <- sample(1:10,1)
+c(x,y)
 ```
 
-Simply catenating two factors leads to a result that most don't expect.
-
+Using fmultiply() to get the product of those two random integers 
 ```{r}
-c(a, b)
+fmultiply(x,y)
 ```
 
-The `fbind()` function glues two factors together and returns factor.
 
-```{r}
-fbind(a, b)
-```
 
-Often we want a table of frequencies for the levels of a factor. The base `table()` function returns an object of class `table`, which can be inconvenient for downstream work.
 
-```{r}
-set.seed(1234)
-x <- factor(sample(letters[1:5], size = 100, replace = TRUE))
-table(x)
-```
 
-The `fcount()` function returns a frequency table as a tibble with a column of factor levels and another of frequencies:
 
-```{r}
-fcount(x)
-```
+
