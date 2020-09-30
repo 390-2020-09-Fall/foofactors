@@ -7,7 +7,7 @@
 oztokg(oz)
 }
 \arguments{
-\item{oz}{}
+\item{oz}{is the original number in oz unit}
 }
 \value{
 kg
