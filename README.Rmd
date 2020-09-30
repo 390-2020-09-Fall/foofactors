@@ -32,24 +32,17 @@ devtools::install_github("390-2020-09-Fall/foofactors")
   
 ## Quick demo
 
-Binding two factors via `fbind()`:
+Convert weight in oz to kg via `oztokg()`:
 
 ```{r}
 library(foofactors)
-a <- factor(c("character", "hits", "your", "eyeballs"))
-b <- factor(c("but", "integer", "where it", "counts"))
+example_weight_in_oz <- 3
 ```
 
-Simply catenating two factors leads to a result that most don't expect.
+The `oztokg()` function transforms the unit into kg:
 
 ```{r}
-c(a, b)
-```
-
-The `fbind()` function glues two factors together and returns factor.
-
-```{r}
-fbind(a, b)
+oztokg(example_weight_in_kg)
 ```
 
 Often we want a table of frequencies for the levels of a factor. The base `table()` function returns an object of class `table`, which can be inconvenient for downstream work.
