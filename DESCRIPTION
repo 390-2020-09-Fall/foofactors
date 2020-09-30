@@ -6,8 +6,8 @@ Authors@R:
            family = "Li",
            role = c("aut", "cre"),
            email = "smli@smith.edu",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           comment = c(ORCID = "0000-0001-5301-4594"))
+Description: Contains a variety of functions written by students in SDS390: Ecological Forecasting, including functions for binding factors, counting factor frequencies, and testing integer parity.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
