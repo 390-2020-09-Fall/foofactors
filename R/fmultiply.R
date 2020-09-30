@@ -1,4 +1,4 @@
-#' Bind two factors
+#' Multiply Two Integers
 #'
 #' Create a new integer from the product of two random integers, where the new integer
 #' is the multiplication of the two input integers
