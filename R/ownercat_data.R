@@ -4,8 +4,8 @@
 #'
 #' @format A data frame with 3 rows and 2 variables:
 #' \describe{
-#'   \item{name}{Owner's Name}
-#'   \item{number}{Cat's Name}
+#'   \item{Owner}{Owner's Name}
+#'   \item{catname}{Cat's Name}
 #'   ...
 #' }
 #' @source \url{https://r-pkgs.org/data.html#data-data/}
