@@ -5,7 +5,7 @@
 #' @format A data frame with 3 rows and 2 variables:
 #' \describe{
 #'   \item{name}{Name}
-#'   \item{bottle}{Water Bottle Type}
+#'   \item{bottle_type}{Water Bottle Type}
 #'   ...
 #' }
 #' @source \url{https://r-pkgs.org/data.html#data-data/}
