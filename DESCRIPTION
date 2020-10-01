@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person(given = "Emma",
            family = "Scott",
-           role = "ctb",
+           role = c("aut","cre"),
            email = "esscott@smith.edu",
            comment = c(ORCID = "0000-0002-1083-5867"))
 Description: What the package does (one paragraph).
@@ -16,4 +16,7 @@ RoxygenNote: 7.1.1
 Suggests: 
     testthat
 Imports: 
-    forcats
+    forcats,
+    dplyr
+Depends: 
+    R (>= 2.10)

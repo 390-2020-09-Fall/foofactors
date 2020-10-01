@@ -2,3 +2,5 @@
 
 export(fbind)
 export(fcount)
+export(roomrank)
+importFrom(dplyr,"%>%")
