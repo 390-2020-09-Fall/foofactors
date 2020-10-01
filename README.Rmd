@@ -65,10 +65,3 @@ The `fcount()` function returns a frequency table as a tibble with a column of f
 ```{r}
 fcount(x)
 ```
-
-We can use the is_odd function to test whether integer values are odd:
-
-```{r}
-is_odd(1)
-is_odd(c(2, 3))
-```
