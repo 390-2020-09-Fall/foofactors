@@ -1,13 +1,13 @@
 Package: foofactors
-Title: Adding two numbers
+Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "Lauren",
-           family = "Low",
+    person(given = "First",
+           family = "Last",
            role = c("aut", "cre"),
-           email = "llow@smith.edu",
-           comment = c(ORCID = "0000-0001-5960-4966"))
-Description: Contains functions written by a Smith student in Albert Kim's SDS390: Ecological Forecasting course.  Functions include binding factors, determining whether a number is odd and others. 
+           email = "first.last@example.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -17,5 +17,3 @@ Suggests:
     testthat
 Imports: 
     forcats
-Depends: 
-    R (>= 2.10)
