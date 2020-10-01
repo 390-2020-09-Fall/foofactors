@@ -1,10 +1,12 @@
-## code to prepare `DATASET` dataset goes here
-library(tidyverse)
-
-schoolsize_data <- tibble(
-  school = c("Amherst College", "Mount Holyoke College", "Smith College","University of Massachusetts, Amherst","Hampshire College"),
-  size = c(1839, 2190, 2531, 24209, 1191)
-)
-usethis::use_data(schoolsize_data, overwrite = TRUE)
-
-
+#' School size data
+#'
+#' Based on R Packages Chapter 14
+#'
+#' @format A data frame with 3 rows and 2 variables:
+#' \describe{
+#'   \item{name}{School Name}
+#'   \item{size}{School size}
+#'   ...
+#' }
+#' @source \url{https://r-pkgs.org/data.html#data-data/}
+"schoolsize_data"
