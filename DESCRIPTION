@@ -2,11 +2,11 @@ Package: foofactors
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person(given = "Emma",
+           family = "Scott",
+           role = c("aut","cre"),
+           email = "esscott@smith.edu",
+           comment = c(ORCID = "0000-0002-1083-5867"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -16,4 +16,7 @@ RoxygenNote: 7.1.1
 Suggests: 
     testthat
 Imports: 
-    forcats
+    forcats,
+    dplyr
+Depends: 
+    R (>= 2.10)
