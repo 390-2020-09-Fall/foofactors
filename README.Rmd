@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-This package provides some helper functions for addinh up two numbers.
+Factors are a very useful type of variable in R, but they can also be very aggravating. This package provides some helper functions for the care and feeding of factors. In addition, this package provides a function that tests for the parity of a specified numeric vector.
 
 ## Installation
 
@@ -36,14 +36,39 @@ Binding two factors via `fbind()`:
 
 ```{r}
 library(foofactors)
+a <- factor(c("character", "hits", "your", "eyeballs"))
+b <- factor(c("but", "integer", "where it", "counts"))
 ```
 
-The `fAdd()` function sums up the two numbers together.
+Simply catenating two factors leads to a result that most don't expect.
 
 ```{r}
-fAdd(3.5, 4)
+c(a, b)
 ```
 
+The `fbind()` function glues two factors together and returns factor.
+
 ```{r}
-fAdd(10000000, 20000000)
+fbind(a, b)
+```
+
+Often we want a table of frequencies for the levels of a factor. The base `table()` function returns an object of class `table`, which can be inconvenient for downstream work.
+
+```{r}
+set.seed(1234)
+x <- factor(sample(letters[1:5], size = 100, replace = TRUE))
+table(x)
+```
+
+The `fcount()` function returns a frequency table as a tibble with a column of factor levels and another of frequencies:
+
+```{r}
+fcount(x)
+```
+
+We can use the is_odd function to test whether integer values are odd:
+
+```{r}
+is_odd(1)
+is_odd(c(2, 3))
 ```

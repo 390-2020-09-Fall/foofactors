@@ -2,13 +2,12 @@ Package: foofactors
 Title: Adding two numbers
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "Serena",
-           family = "Li",
+    person(given = "Lauren",
+           family = "Low",
            role = c("aut", "cre"),
-           email = "sli58@smith.edu",
-           comment = c(ORCID = "0000-0003-1486-3432"))
-Description: When you meet extra large numbers and feel not confident adding them by hand,
-            this package helps you to do the calculation.
+           email = "llow@smith.edu",
+           comment = c(ORCID = "0000-0001-5960-4966"))
+Description: Contains functions written by a Smith student in Albert Kim's SDS390: Ecological Forecasting course.  Functions include binding factors, determining whether a number is odd and others. 
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
