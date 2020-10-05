@@ -65,10 +65,3 @@ The `fcount()` function returns a frequency table as a tibble with a column of f
 ```{r}
 fcount(x)
 ```
-
-The `roomrank()` function returns a data frame of a selection of dorm rooms in Smith College's Cushing House ranked from most to least desireable based on the following criteria: having southwest-facing window, located in corner, and located not near a bathroom:
-```{r}
-ranked_df <- roomrank(room_data) 
-best_rooms <- dplyr::filter(ranked_df, Score == 3)
-best_rooms
-```
