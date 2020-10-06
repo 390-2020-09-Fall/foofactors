@@ -32,7 +32,6 @@ devtools::install_github("390-2020-09-Fall/foofactors")
   
 ## Quick demo
 
-Binding two factors via `fbind()`:
 
 ```{r}
 library(foofactors)

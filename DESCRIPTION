@@ -2,7 +2,7 @@ Package: foofactors
 Title: Adding two numbers
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "Serena",
+    person(given = "Serena  ",
            family = "Li",
            role = c("aut", "cre"),
            email = "sli58@smith.edu",

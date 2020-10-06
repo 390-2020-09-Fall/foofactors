@@ -31,7 +31,6 @@ library(foofactors)
 ```
 
 The `fAdd()` function sums up the two numbers together.
-
 ``` r
 fAdd(3.5, 4)
 #> [1] 7.5
