@@ -7,6 +7,7 @@
 #'   \item{Driver}{Driver's Name}
 #'   \item{PTS}{Points}
 #'   ...
+#'
 #' }
 #' @source \url{https://r-pkgs.org/data.html#data-data/}
 "Driver_Standings_data"
