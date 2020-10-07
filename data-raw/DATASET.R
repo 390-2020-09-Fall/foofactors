@@ -6,4 +6,4 @@ toy_data <- tibble(
   number = c(9, 79, 76)
 )
 
-usethis::use_data(toy_data, overwrite = TRUE)
+usethis::use_data_raw(toy_data, overwrite = TRUE)

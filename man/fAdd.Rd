@@ -15,7 +15,6 @@ fAdd(p, q)
 factor
 }
 \description{
-
 Return a number that is the sum of q and q
 are the union of the levels of the input factors.
 }
