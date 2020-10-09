@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-Factors are a very useful type of variable in R, but they can also be very aggravating. This package provides some helper functions for the care and feeding of factors.
+Factors are a very useful type of variable in R, but they can also be very aggravating. This package provides some helper functions for the care and feeding of factors. In addition, this package provides a function that tests for the parity of a specified numeric vector.
 
 ## Installation
 
@@ -64,4 +64,11 @@ The `fcount()` function returns a frequency table as a tibble with a column of f
 
 ```{r}
 fcount(x)
+```
+
+We can use the is_odd function to test whether integer values are odd:
+
+```{r}
+is_odd(1)
+is_odd(c(2, 3))
 ```
