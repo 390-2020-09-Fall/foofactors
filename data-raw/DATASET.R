@@ -1,5 +1,8 @@
 ## code to prepare `DATASET` dataset goes here
 library(tidyverse)
 
-oztokg_data <- as.tibble(sample(20))
-usethis::use_data(oztokg_data, overwrite = TRUE)
+toy_data <- tibble(
+  name = c("Guy Incognito", "Cosme Fulanito", "Albert Y. Kim"),
+  number = c(9, 79, 76)
+)
+usethis::use_data(toy_data, overwrite = TRUE)

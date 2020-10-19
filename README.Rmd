@@ -32,15 +32,36 @@ devtools::install_github("390-2020-09-Fall/foofactors")
   
 ## Quick demo
 
-`oztokg` function converts number of weight in oz to kg. Here is the first 6 items of an example dataset of numbers in oz:
+Binding two factors via `fbind()`:
 
 ```{r}
 library(foofactors)
-head(oztokg_data)
+a <- factor(c("character", "hits", "your", "eyeballs"))
+b <- factor(c("but", "integer", "where it", "counts"))
 ```
 
-The `oztokg()` function converts the numbers to units in kg:
+Simply catenating two factors leads to a result that most don't expect.
 
 ```{r}
-oztokg(oztokg_data)
+c(a, b)
+```
+
+The `fbind()` function glues two factors together and returns factor.
+
+```{r}
+fbind(a, b)
+```
+
+Often we want a table of frequencies for the levels of a factor. The base `table()` function returns an object of class `table`, which can be inconvenient for downstream work.
+
+```{r}
+set.seed(1234)
+x <- factor(sample(letters[1:5], size = 100, replace = TRUE))
+table(x)
+```
+
+The `fcount()` function returns a frequency table as a tibble with a column of factor levels and another of frequencies:
+
+```{r}
+fcount(x)
 ```
