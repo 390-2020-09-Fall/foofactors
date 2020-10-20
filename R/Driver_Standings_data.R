@@ -1,4 +1,4 @@
-#' Driver_Standings Data
+#' Driver_Standings_data
 #'
 #' Based on R Packages Chapter 14
 #'
@@ -11,3 +11,4 @@
 #' }
 #' @source \url{https://r-pkgs.org/data.html#data-data/}
 "Driver_Standings_data"
+
