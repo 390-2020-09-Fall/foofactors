@@ -1,24 +1,30 @@
-#' Filters ForestGeo's SCBI tree census data by stem code. Allows user to select for or exclude entries based on the presence of user-defined stem code(s).
-#' Please reference the following website for stem code definitions: https://github.com/SCBI-ForestGEO/SCBI-ForestGEO-Data/blob/master/tree_main_census/metadata/SCBI_stem_codes.pdf.
+#' Select data using stem code
+#'
+#' @description Filters ForestGeo's SCBI tree census data by stem code. Allows user to select for or exclude entries based on the presence of user-defined stem code(s). Please reference the following website for stem code definitions: \url{https://github.com/SCBI-ForestGEO/SCBI-ForestGEO-Data/blob/master/tree_main_census/metadata/SCBI_stem_codes.pdf}.
+#' @import dplyr
 #'
 #' @param df data frame
 #' @param stem_code character or list
-#' @param include logical
+#' @param include logical; TRUE will filter the data frame to include only entries containing the given stem code(s) and FALSE will remove all entries containing the given code(s)
 #'
 #' @return data frame
 #' @export
 #'
 #' @examples
-#' treecensus_example <- read.csv(text=getURL("https://raw.githubusercontent.com/390-2020-09-Fall/SCBI-ForestGEO-Data/master/tree_main_census/data/census-csv-files/scbi.stem3.csv"))
+#' stem_code_filter(treecensus, "F", include = FALSE)
 #' my_codes <- c("A", "M", "DC", "D", "B")
-#' stem_code_filter(treecensus_example, my_codes)
+#' stem_code_filter(treecensus, my_codes)
 #'
 
 stem_code_filter <- function(df, stem_code, include = TRUE) {
 
+  # Binding global variables to function (fixing check() note)
+  codefind <- codes <- codeselect <- NULL
 
+
+  # Changing/standardizing missing-value code
+  df <- df %>% mutate(codes = as.character(codes))
   df <- df %>% mutate(codes = ifelse(codes == "NULL", NA, codes))
-
 
   # Renaming codes that have two or more characters
 

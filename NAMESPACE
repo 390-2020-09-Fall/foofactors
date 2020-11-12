@@ -3,3 +3,5 @@
 export(fbind)
 export(fcount)
 export(is_odd)
+export(stem_code_filter)
+import(dplyr)
