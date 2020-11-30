@@ -10,9 +10,11 @@ numadd(a, b)
 \arguments{
   \item{a}{number}
 
-  \item{a}{number}
+  \item{b}{number}
 }
-
+\description{
+Add two numbers together
+}
 \examples{
 numadd(10, 12)
 }
